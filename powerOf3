@@ -1,0 +1,12 @@
+public class powerOf3
+{
+  public static boolean powerof3(int x)
+    {
+        if (x == 1) //check this case first before checking remainder
+           return true;
+        else if (x % 3 != 0)
+           return false;
+        else 
+           return powerof3(x/3);
+   }
+}
